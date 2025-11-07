@@ -1,0 +1,39 @@
+/* Este serve resetar alguns estilos padrões e reutilizar algumas classes ao do projeto. */
+body{
+  font-family: "Fira Sans",Arial, sans-serif;
+  margin:0px;
+  color: #141414;
+
+}
+
+h1,h2,h3, p{
+  margin:0px;
+}
+
+ul{
+  margin: 0px;
+  padding:0px;
+  list-style: none;
+}
+
+img{
+  max-width: 100%; /* irá impedir a imagem ultrapasse os limetes do contêiner. */
+  height: auto; /* Faz com a altura da imagem  seja ajustada automaticamente á largura mantendo proporção original.*/
+  display: block; /* Muda o comportamento padrão que de inline passa ter o comportamento de bloco ocupando toda a largura disponível e quebrando linha antes de depois. */
+}
+
+.subtitulo{
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase; /* Deixar do texto em maiúsculo */
+  word-break: break-all; /*Comando para quebrar palavra*/
+  max-width: 4ch; /* Quando a palavra estiver bem espaçada irá quebrar no 4 caracteres */
+}
+
+@media (max-width: 800px){
+   .subtitulo{
+    font-size: 3rem;
+    text-transform: capitalize;/* irá deixar só primeira letra em maiúsculo. */
+    max-width: initial !important; /* o texto ficará com valor inicial sem quebra */ /* !important considera valor prioritário sobrepõe aos outros. */
+   }
+}

@@ -1,0 +1,38 @@
+.header{
+  max-width: 1200px; /* Serve para uma largura máxima no site para não crescer infinitamente.*/
+  padding: 40px 20px; /* para poder desgrudar os elementos da borda do site. */
+  margin:0 auto; /* alinhar um elemento de bloco ao centro utilizamos margens.*/
+  display: flex; /* Deixa os elementos um do lado do outro.*/
+  justify-content: space-between; /* utilizado para afastar elementos. */ 
+  align-items: center; /* alinhar os elementos ao centro. */
+}
+
+.header-menu{
+  display: flex;
+  flex-wrap:wrap; /* caso diminua muito a página os elementos possam quebrar.*/
+  gap:10px; /* espaço entre os elementos do menu.*/
+  justify-content: center;
+}
+.header-menu a{
+  font: size 1.125rem;
+  line-height: 1.3;
+  padding:10px 20px; /* serve para aumentar a area de click para um menu. */
+  text-decoration: none; /* Para retirar i subilhado dos itens do menu. */
+  color: #141414;
+  display: block; /* Aqui é utilizado para os elementos pegarem os valores corretos de padding. */
+}
+/* parte responsiva do menu do site*/
+@media (max-width: 800px){
+
+  .header{
+    flex-direction: column; /* irá mudar comportamento que era uma lado do outro para coluna um abaixo do outro. */
+    gap:40px; /* aumenta a distancia entre os itens. */
+    padding:20px; /* valor foi diminuido para ajustar os espaço em branco entres os elementos. */
+  }
+
+  .header a{
+    background:#f5f5f5;/* foi inserido a cor para ficar melhor visivel o botões em uma tela menor*/
+    border-radius: 4px; /* serve para aredontar as pontas das bordas dos elementos. */
+  }
+
+}

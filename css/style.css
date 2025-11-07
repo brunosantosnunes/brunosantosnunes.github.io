@@ -1,0 +1,7 @@
+/* Arquivo onde importa os outros arquivos CSS */
+@import "./global.css";
+@import "./header.css";
+@import "./introducao.css";
+@import "./experiencia.css";
+@import "./formacao.css";
+@import "./footer.css";
